@@ -11,7 +11,7 @@ The company layer is already done. Don't re-ask about the ERP, branches, vendors
 
 ## Showing progress in the UI
 
-This skill walks through eight user-setup steps. **Use the task-tracking tool (TodoWrite, or whatever the equivalent in this CoWork session is called) to render them in the chat UI's progress panel** so the user can see where they are.
+This skill walks through nine user-setup steps. **Use the task-tracking tool (TodoWrite, or whatever the equivalent in this CoWork session is called) to render them in the chat UI's progress panel** so the user can see where they are.
 
 At the start of the skill, before Step 1, create the full task list:
 
@@ -20,9 +20,10 @@ At the start of the skill, before Step 1, create the full task list:
 3. What you do and how you work
 4. Your voice (override company default if needed)
 5. Your priorities and pain points
-6. Set up scheduled tasks
-7. Build your first artifact
-8. Wrap and handoff
+6. Activate your Personal Assistant
+7. Set up additional scheduled tasks
+8. Build your first artifact
+9. Wrap and handoff
 
 Mark each step `in_progress` when you start it and `completed` immediately when it's done. **Do not batch updates** — update the panel as the user actually moves through.
 
@@ -135,9 +136,111 @@ Captures `my-priorities.md`.
 3. **What you'd rather not spend time on.** "Anything you're hoping the system can reduce or remove from your week? Repetitive drafting, canned reports, re-explaining context?"
 4. **Where Claude should push back on you.** "The system defaults to challenging you on bad calls — extending credit to shaky accounts, carrying SKUs that aren't moving, soft vendor responses. Anything else specific you want flagged?"
 
-### Step 6: Set up scheduled tasks
+### Step 6: Activate your Personal Assistant
 
-CoWork supports scheduled tasks — recurring AI-driven jobs that run on a timer. The biggest win is the **monthly System Review**, which keeps the system honest over time. Pre-trigger this step instead of waiting for the user to ask, because most users don't realise scheduled tasks exist.
+This step turns the workspace into an active personal assistant. Once activated, the system tracks tasks, logs the day, remembers vendors and customer contacts, captures decisions, and gives daily briefings — all from natural conversation. **Pre-trigger this step rather than treating it as optional**, because the PA changes how every subsequent interaction works. If you save it for "later," the user works without the daily backbone for the entire First Week Guide and most won't come back to activate it.
+
+Tell the user briefly:
+
+> "One more piece worth turning on now — the Personal Assistant. From this point forward, when you talk about your day (vendor calls, customer issues, AR firefights, dead-stock decisions), I'll capture it automatically — log entries, tasks, contacts, decisions. You'll get a morning briefing each weekday and an end-of-day summary. About two minutes to set up. Worth it."
+
+Use AskUserQuestion: "Activate the Personal Assistant?"
+- "Yes, activate it" (default — pre-checked)
+- "Tell me more first"
+- "Skip for now"
+
+**If "Tell me more first":** read `${CLAUDE_PLUGIN_ROOT}/reference/quick-reference.md` and present the contents. Then ask again.
+
+**If "Skip for now":** note in `ABOUT ME/USER/my-memory.md` that PA wasn't activated, and tell the user they can activate it later by saying "activate my Personal Assistant." Move to Step 7.
+
+**If yes (default), do the following in this order:**
+
+#### 6a. Create the PA file structure
+
+Create these files inside `WORK AREAS/Admin-PA/`:
+
+```
+WORK AREAS/Admin-PA/
+├── captains-log/
+│   └── [YYYY]-[MM]-captains-log.md      (current month's file)
+├── tasks.md
+├── contacts.md
+├── preferences.md
+├── output-log.md
+├── inventory-action-log.md
+├── vendor-pulse-reports/                 (folder, can be empty)
+└── drift-reports/                        (folder, can be empty)
+```
+
+Use the templates from `${CLAUDE_PLUGIN_ROOT}/reference/captains-log-format.md` (for the captain's log header) and inline templates for the other files (see the personal-assistant skill in this plugin for the empty-state contents).
+
+Tell the user one line: "PA file structure created in `WORK AREAS/Admin-PA/`. Logs, tasks, contacts, decisions, and inventory actions will all live there. **Per-user, not company-wide** — each employee's logs stay in their own workspace."
+
+#### 6b. Update CLAUDE.md with PA rules
+
+Append the following block to `CLAUDE.md` before the `## WHO I AM` section (or wherever the personalisation sections start):
+
+```markdown
+## PERSONAL ASSISTANT
+
+The Personal Assistant plugin is active. These behaviours apply across all sessions:
+
+- **Captain's Log:** When the user is chatting conversationally (not working on a specific deliverable), treat it as captain's log input. Append timestamped entries to the current month's log file in `WORK AREAS/Admin-PA/captains-log/`. Create a new monthly file on the 1st of each month.
+- **Task extraction:** When conversation contains action items ("need to", "should", "have to", "follow up", "remind me"), create or update entries in `WORK AREAS/Admin-PA/tasks.md`. Use distributor-tuned signal phrases. Tag with vendor/customer/AR/inventory/internal as appropriate.
+- **Contact tracking:** When people are mentioned by name with context, update `WORK AREAS/Admin-PA/contacts.md`. Distinguish vendor / customer / internal / buying group / trade association / service provider / other types.
+- **Preference and decision capture:** When the user states a preference or makes a decision, log it in `WORK AREAS/Admin-PA/preferences.md`.
+- **Output tracking:** When you save a file to any `outputs/` folder, append a one-liner to `WORK AREAS/Admin-PA/output-log.md` — timestamp, filename, project context.
+- **Inventory action capture:** When the user pastes an ERP inventory export or describes an inventory decision, log to `WORK AREAS/Admin-PA/inventory-action-log.md` with the decision context.
+- **Vendor / customer tagging:** Read top vendor and customer lists from `ABOUT ME/COMPANY/company-profile.md`. Tag conversations mentioning them. Vendor-pulse and account-drift skills aggregate these tags weekly and monthly.
+- **Privacy:** Anything tagged `[private]` (sensitive personnel matters, salary discussions, HR escalations) stays out of System Review reports the company admin sees. In multi-user deployments, individual user logs are never shared without explicit user consent.
+- **Monthly rotation:** Captain's log files rotate monthly. Format: `YYYY-MM-captains-log.md`. At month's end, start a new file.
+```
+
+Then tell the user: "I've appended the Personal Assistant rules to your `CLAUDE.md`. **You'll need to re-paste `CLAUDE.md` into your CoWork Global Instructions** so the PA rules apply to every new session."
+
+Walk them through it: open `CLAUDE.md`, copy the entire contents, in CoWork open `Customise → Global Instructions`, paste, save.
+
+#### 6c. Set up the two PA scheduled tasks
+
+The morning briefing and end-of-day summary run on a schedule. Ask the user for preferred times.
+
+Use AskUserQuestion: "What time would you like your morning briefing?"
+- "8:00 AM (default — before the counter rush)"
+- "7:00 AM (earlier — for early-shift folks)"
+- "9:00 AM (later — for office-only roles)"
+
+Then: "What time for the end-of-day summary?"
+- "6:00 PM (default — after the day winds down)"
+- "5:00 PM"
+- "7:00 PM"
+
+For each, write the prompt + schedule and tell the user to paste into CoWork's scheduled-tasks panel. Use the recipes in `${CLAUDE_PLUGIN_ROOT}/reference/scheduled-task-recipes.md`. Two tasks:
+
+1. **PA — Morning Briefing** at the chosen weekday time
+2. **PA — End-of-Day Summary** at the chosen weekday time
+
+Tell the user where to paste them: "Open CoWork's scheduled tasks panel (clock or calendar icon in the sidebar), click 'New scheduled task,' paste the prompt, set the schedule. About 30 seconds per task."
+
+#### 6d. Optional: import existing contacts and tasks
+
+Use AskUserQuestion: "Do you have existing contacts or tasks you'd like to bring in?"
+
+- "Yes, I have a CSV of contacts"
+- "Yes, I have tasks somewhere I'd like to bring across"
+- "Yes, both"
+- "No, start fresh"
+
+Handle CSV imports inline. For "start fresh," move on with one line: "No problem — your PA will build up your contacts and tasks naturally as you use it."
+
+#### 6e. Activate PA mode and surface the quick reference
+
+Read `${CLAUDE_PLUGIN_ROOT}/reference/quick-reference.md` and present the contents. Highlight the slash commands and the "just talk to it" pattern.
+
+Then: "Your PA is live. From this point forward, just talk to me about what's happening and I'll handle the routing. Try it now — tell me something about your day, or use `/log` for a quick entry."
+
+### Step 7: Set up additional scheduled tasks
+
+CoWork supports more scheduled tasks beyond the PA's morning briefing + EOD. The biggest one is the **monthly System Review**, which keeps the system honest over time. Pre-trigger this step instead of waiting for the user to ask.
 
 > "One of the things this system does well is run scheduled tasks for you — recurring AI-driven jobs on a timer. Here are some that fit your role. The first one (System Review) I've pre-checked because it's the highest-value loop in the whole system. Pick the ones you want and I'll write the prompts for you to drop into CoWork's scheduled-tasks panel."
 
@@ -146,11 +249,15 @@ Read the user's role from `ABOUT ME/USER/me.md`. Pre-suggest the recommended set
 | Task | Pre-checked / Suggest by role |
 |---|---|
 | **Monthly System Review** | ✅ Pre-checked for every user |
+| **Weekly Vendor Pulse** | Suggest for everyone (uses captain's log to summarise vendor activity) |
+| **Monthly Account Drift Check** | Suggest for everyone (flags customers gone quiet) |
 | **Weekly AR aging triage** | Suggest if role is GM, Branch Manager, Finance, AR, Credit |
 | **Monthly dead-stock review** | Suggest if role is Purchasing or GM |
 | **Quarterly vendor QBR prep reminder** | Suggest if role is Purchasing or Outside Sales |
-| **Daily morning briefing** | Suggest for everyone |
 | **Friday weekly review** | Optional, suggest for GM and Branch Manager |
+| **Daily counter pulse** | Suggest if role is Branch Manager |
+
+Note: morning briefing + end-of-day summary were already set up in Step 6 (PA activation). Don't re-offer them here.
 
 Present using AskUserQuestion or sequential yes/no checks. The System Review must be pre-selected; the user has to actively *un*check it to remove it. Other tasks default to suggested-but-unselected.
 
@@ -185,7 +292,7 @@ After setup, brief confirmation:
 
 > "Your scheduled tasks are queued. They'll fire automatically as long as CoWork is running on your machine. You can edit, pause, or delete any of them in the scheduled tasks panel any time."
 
-### Step 7: Build your first artifact
+### Step 8: Build your first artifact
 
 The user has spent 5+ minutes on individual setup, and the company layer was already populated. Time to give them something tangible — a real artifact built using the business and personal context they've captured. Five to ten minutes; they keep using it after. **Don't skip this step unless they explicitly opt out.**
 
@@ -233,7 +340,7 @@ After saving, close the artifact step:
 
 > "Your [artifact name] is at `[full path]`. Use it before [next time it's relevant — vendor QBR, weekly review, AR triage]. Come back in your next session and we'll iterate. **This is the kind of thing this system does well — real work, in your voice, with your data.**"
 
-### Step 8: Wrap and handoff
+### Step 9: Wrap and handoff
 
 After the four USER/ files are populated, do three things:
 

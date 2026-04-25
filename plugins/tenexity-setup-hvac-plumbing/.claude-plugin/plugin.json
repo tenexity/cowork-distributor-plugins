@@ -1,6 +1,6 @@
 {
   "name": "tenexity-setup-hvac-plumbing",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Setup plugin for HVAC and plumbing wholesale distributors using the CoWork for Distributors scaffold. Bundles three skills — Onboarding Coach, System Review, and First Week Guide — that personalise the scaffold to your business and walk you through your first week of guided wins. Install once and the three skills are available for every CoWork session in this workspace.",
   "author": {
     "name": "Tenexity"

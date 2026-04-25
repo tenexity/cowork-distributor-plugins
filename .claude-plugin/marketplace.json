@@ -12,8 +12,8 @@
     {
       "name": "tenexity-setup-hvac-plumbing",
       "source": "./plugins/tenexity-setup-hvac-plumbing",
-      "description": "Single-user setup plugin for HVAC and plumbing wholesale distributors. Bundles three skills (Onboarding Coach, System Review, First Week Guide) for solo distributors and small shops. v1.1 adds scheduled-task pre-trigger, role-based First Week Guide selection, and a closing 'first artifact' step that produces a real, reusable document at the end of setup. For team deployments of 5+ employees, use the Tenexity Setup Team plugin instead.",
-      "version": "1.1.0",
+      "description": "Single-user setup plugin for HVAC and plumbing wholesale distributors. Bundles seven skills: Onboarding Coach, System Review, First Week Guide, Personal Assistant (always-on conversational logging + task extraction + contact tracking), Daily Briefing (morning + end-of-day), Vendor Pulse (weekly vendor activity from captain's log), Account Drift Detector (flags customers gone quiet). Plus 5 slash commands (/log, /tasks, /briefing, /eod, /tidy). v1.2 turns the workspace into an active personal assistant tailored for distributor work — conversational, vendor-aware, AR-aware, inventory-aware. For team deployments of 5+ employees, use the Tenexity Setup Team plugin instead.",
+      "version": "1.2.0",
       "author": {
         "name": "Tenexity"
       },
@@ -23,8 +23,8 @@
     {
       "name": "tenexity-setup-team-hvac-plumbing",
       "source": "./plugins/tenexity-setup-team-hvac-plumbing",
-      "description": "Multi-user setup plugin for HVAC and plumbing wholesale distributors deploying CoWork across a team of 5-50 employees. Bundles four skills: Setup Company (admin runs once, ~15 min), Setup User (per-employee, ~5 min), System Review, and First Week Guide. Two-layer architecture splits company-wide context from individual user info — admin populates COMPANY/ once, every employee inherits it. v1.1 adds scheduled-task pre-trigger, role-based First Week Guide selection, and a closing 'first artifact' step.",
-      "version": "1.1.0",
+      "description": "Multi-user setup plugin for HVAC and plumbing wholesale distributors deploying CoWork across a team of 5-50 employees. Bundles eight skills: Setup Company (admin runs once, ~15 min), Setup User (per-employee, ~7 min including PA activation), System Review, First Week Guide, Personal Assistant (always-on conversational logging + task extraction + contact tracking), Daily Briefing (morning + end-of-day), Vendor Pulse (weekly), Account Drift Detector (monthly). Plus 5 slash commands (/log, /tasks, /briefing, /eod, /tidy). Two-layer architecture splits company-wide context from individual user info — admin populates COMPANY/ once, every employee inherits it. v1.2 turns the workspace into an active personal assistant tailored for distributor work.",
+      "version": "1.2.0",
       "author": {
         "name": "Tenexity"
       },
