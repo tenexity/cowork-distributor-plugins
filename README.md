@@ -24,12 +24,15 @@ You'll see Tenexity's plugins listed under the **Personal** tab. Click **+** on 
 
 Plugins are added here as they ship. Run `cat .claude-plugin/marketplace.json` for the live list.
 
-Planned for v0.1 launch:
+Shipping in v0.1:
 
+- **Tenexity Setup — HVAC & Plumbing Distributor** — bundles the three skills required to personalise the CoWork for Distributors scaffold: Onboarding Coach, System Review, and First Week Guide. Install this first; everything else assumes you've completed onboarding.
 - **Inventory Optimisation Coach** — coaches distributors through dead-stock analysis, reorder-point reviews, branch-level transfer rebalancing, vendor return programs, and working-capital snapshots. ERP-agnostic; you paste exports.
 - **Rebate Reconciliation Specialist** — coaches distributors through vendor rebate program reconciliation, threshold tracking, claim drafting, and leakage identification. Vendor-agnostic; you paste program terms.
 
-Both v0.1 plugins are **scaffold-layer free coaches** — they explain methodology, ask for ERP exports as pasted input, and produce one-shot analyses. They do not connect to ERPs, manufacturer portals, or run scheduled jobs. Ongoing automation, ERP integration, and persistent state are part of paid Tenexity pilots — see [tenexity.ai/distributors](https://tenexity.ai/distributors) for pilot details.
+The **setup plugin** packages the three setup skills into a single one-click install — no file-permissions roulette, no marketplace fallback for skills.
+
+The **two operational plugins** are scaffold-layer free coaches — they explain methodology, ask for ERP exports as pasted input, and produce one-shot analyses. They do not connect to ERPs, manufacturer portals, or run scheduled jobs. Ongoing automation, ERP integration, and persistent state are part of paid Tenexity pilots — see [tenexity.ai/distributors](https://tenexity.ai/distributors) for pilot details.
 
 ---
 
