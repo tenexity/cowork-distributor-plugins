@@ -1,0 +1,22 @@
+{
+  "name": "tenexity-setup-team-hvac-plumbing",
+  "version": "1.0.0",
+  "description": "Multi-user setup plugin for HVAC and plumbing wholesale distributors deploying CoWork for Distributors across a team of 5-50 employees. Bundles four skills: Setup Company (GM/admin runs once, ~15 min), Setup User (every employee runs, ~5 min), System Review (monthly cadence), and First Week Guide (5 days of guided wins). Designed for staged rollout — connect once, install once per machine, scale from 5 to 50 users without reconfiguration.",
+  "author": {
+    "name": "Tenexity"
+  },
+  "keywords": [
+    "setup",
+    "onboarding",
+    "team",
+    "multi-user",
+    "company",
+    "hvac",
+    "plumbing",
+    "wholesale-distribution",
+    "distributor",
+    "tenexity",
+    "first-week-guide",
+    "system-review"
+  ]
+}

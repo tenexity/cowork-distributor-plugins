@@ -26,11 +26,12 @@ Plugins are added here as they ship. Run `cat .claude-plugin/marketplace.json` f
 
 Shipping in v0.1:
 
-- **Tenexity Setup — HVAC & Plumbing Distributor** — bundles the three skills required to personalise the CoWork for Distributors scaffold: Onboarding Coach, System Review, and First Week Guide. Install this first; everything else assumes you've completed onboarding.
+- **Tenexity Setup — HVAC & Plumbing Distributor** (single-user) — bundles three skills for solo distributors and small shops: Onboarding Coach, System Review, First Week Guide. Pairs with `CoWork-for-Distributors-v1.0/`.
+- **Tenexity Setup Team — HVAC & Plumbing Distributor** (multi-user) — bundles four skills for distributors deploying across 5-50 employees: Setup Company (admin), Setup User (per-employee), System Review, First Week Guide. Two-layer architecture (COMPANY + USER). Pairs with `CoWork-for-Distributors-v2.0/`.
 - **Inventory Optimisation Coach** — coaches distributors through dead-stock analysis, reorder-point reviews, branch-level transfer rebalancing, vendor return programs, and working-capital snapshots. ERP-agnostic; you paste exports.
 - **Rebate Reconciliation Specialist** — coaches distributors through vendor rebate program reconciliation, threshold tracking, claim drafting, and leakage identification. Vendor-agnostic; you paste program terms.
 
-The **setup plugin** packages the three setup skills into a single one-click install — no file-permissions roulette, no marketplace fallback for skills.
+The **setup plugins** package the setup skills into a one-click install — no file-permissions roulette, no marketplace fallback for skills.
 
 The **two operational plugins** are scaffold-layer free coaches — they explain methodology, ask for ERP exports as pasted input, and produce one-shot analyses. They do not connect to ERPs, manufacturer portals, or run scheduled jobs. Ongoing automation, ERP integration, and persistent state are part of paid Tenexity pilots — see [tenexity.ai/distributors](https://tenexity.ai/distributors) for pilot details.
 
