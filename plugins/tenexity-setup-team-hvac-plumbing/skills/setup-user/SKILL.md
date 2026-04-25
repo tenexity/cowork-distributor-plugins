@@ -11,7 +11,7 @@ The company layer is already done. Don't re-ask about the ERP, branches, vendors
 
 ## Showing progress in the UI
 
-This skill walks through five user-setup steps. **Use the task-tracking tool (TodoWrite, or whatever the equivalent in this CoWork session is called) to render them in the chat UI's progress panel** so the user can see where they are.
+This skill walks through eight user-setup steps. **Use the task-tracking tool (TodoWrite, or whatever the equivalent in this CoWork session is called) to render them in the chat UI's progress panel** so the user can see where they are.
 
 At the start of the skill, before Step 1, create the full task list:
 
@@ -20,6 +20,9 @@ At the start of the skill, before Step 1, create the full task list:
 3. What you do and how you work
 4. Your voice (override company default if needed)
 5. Your priorities and pain points
+6. Set up scheduled tasks
+7. Build your first artifact
+8. Wrap and handoff
 
 Mark each step `in_progress` when you start it and `completed` immediately when it's done. **Do not batch updates** — update the panel as the user actually moves through.
 
@@ -132,7 +135,105 @@ Captures `my-priorities.md`.
 3. **What you'd rather not spend time on.** "Anything you're hoping the system can reduce or remove from your week? Repetitive drafting, canned reports, re-explaining context?"
 4. **Where Claude should push back on you.** "The system defaults to challenging you on bad calls — extending credit to shaky accounts, carrying SKUs that aren't moving, soft vendor responses. Anything else specific you want flagged?"
 
-### Step 6: Wrap and handoff
+### Step 6: Set up scheduled tasks
+
+CoWork supports scheduled tasks — recurring AI-driven jobs that run on a timer. The biggest win is the **monthly System Review**, which keeps the system honest over time. Pre-trigger this step instead of waiting for the user to ask, because most users don't realise scheduled tasks exist.
+
+> "One of the things this system does well is run scheduled tasks for you — recurring AI-driven jobs on a timer. Here are some that fit your role. The first one (System Review) I've pre-checked because it's the highest-value loop in the whole system. Pick the ones you want and I'll write the prompts for you to drop into CoWork's scheduled-tasks panel."
+
+Read the user's role from `ABOUT ME/USER/me.md`. Pre-suggest the recommended set, with **System Review pre-checked for every user**:
+
+| Task | Pre-checked / Suggest by role |
+|---|---|
+| **Monthly System Review** | ✅ Pre-checked for every user |
+| **Weekly AR aging triage** | Suggest if role is GM, Branch Manager, Finance, AR, Credit |
+| **Monthly dead-stock review** | Suggest if role is Purchasing or GM |
+| **Quarterly vendor QBR prep reminder** | Suggest if role is Purchasing or Outside Sales |
+| **Daily morning briefing** | Suggest for everyone |
+| **Friday weekly review** | Optional, suggest for GM and Branch Manager |
+
+Present using AskUserQuestion or sequential yes/no checks. The System Review must be pre-selected; the user has to actively *un*check it to remove it. Other tasks default to suggested-but-unselected.
+
+For each task the user selects, write the **exact prompt** plus schedule. Use this format (one block per selected task):
+
+```
+Task: [Task name]
+Schedule: [Cron-friendly description, e.g., "First Tuesday of each month, 8 AM"]
+Prompt to paste into CoWork's scheduled tasks panel:
+[Full trigger prompt — what Claude should do when this fires]
+```
+
+Example for System Review:
+```
+Task: Monthly System Review
+Schedule: First Tuesday of each month, 8 AM
+Prompt: "Run the System Review skill. Read ABOUT ME/COMPANY/ and ABOUT ME/USER/ files plus recent memory entries from WORK AREAS. Identify patterns, catch setup drift, check distributor cadence signals, and produce a System Health Report saved to WORK AREAS/Admin-PA/system-reviews-project/outputs/. Walk me through the recommendations one at a time."
+```
+
+Tell the user how to set them up:
+
+> "Go to CoWork's scheduled tasks panel (look for a clock or calendar icon in the sidebar — depends on your CoWork version), click 'New scheduled task,' paste each prompt, and set the schedule. About 30 seconds per task."
+
+**If the user wants a custom scheduled task that's not on the list**, let them describe it in plain English. Then YOU write the exact prompt + schedule for that task. Common requests:
+- "Friday afternoon vendor follow-up reminders"
+- "End-of-month rebate program check"
+- "Weekly inventory transfer balance"
+
+For any custom task, return the same format (Task / Schedule / Prompt) for them to paste.
+
+After setup, brief confirmation:
+
+> "Your scheduled tasks are queued. They'll fire automatically as long as CoWork is running on your machine. You can edit, pause, or delete any of them in the scheduled tasks panel any time."
+
+### Step 7: Build your first artifact
+
+The user has spent 5+ minutes on individual setup, and the company layer was already populated. Time to give them something tangible — a real artifact built using the business and personal context they've captured. Five to ten minutes; they keep using it after. **Don't skip this step unless they explicitly opt out.**
+
+Read the user's role from `ABOUT ME/USER/me.md`. Match to the recommended starter artifact:
+
+| Role | Starter artifact | Template |
+|---|---|---|
+| Owner / President / GM | 90-day priorities one-pager | `RESOURCES/TEMPLATES/90-day-priorities-template.md` |
+| VP / Director | 90-day priorities one-pager | `RESOURCES/TEMPLATES/90-day-priorities-template.md` |
+| Branch Manager | Branch performance dashboard | `RESOURCES/TEMPLATES/branch-dashboard-template.md` |
+| Purchasing | Vendor scorecard for top vendor | `RESOURCES/TEMPLATES/vendor-scorecard-template.md` |
+| Outside Sales | Top-25 account tracker | `RESOURCES/TEMPLATES/top-25-account-tracker-template.md` |
+| Inside Sales / Counter / Quote Desk | Customer quote response template | `RESOURCES/TEMPLATES/customer-quote-template.md` |
+| Finance / AR / Credit | AR collection prioritisation matrix | `RESOURCES/TEMPLATES/ar-collection-matrix-template.md` |
+| Other / Multi-role | Weekly review template | `RESOURCES/TEMPLATES/weekly-review-template.md` |
+
+Use AskUserQuestion to confirm:
+
+> "Last step before we close — let's build your first artifact. Based on your role as [role], the highest-impact starter for you is a **[artifact name]**. About five to ten minutes — you'll have something you can actually use today. Want to build it now or skip?"
+
+Options:
+- "Yes, let's build it"
+- "Pick a different artifact" — show the full list, let them choose
+- "Skip — but remind me next time"
+
+**If skip:** append an entry to `ABOUT ME/USER/my-memory.md` so the next session reminds them. Confirmation:
+
+> "No problem — five minutes well spent for a real piece of work in your hands. **I'll bring this back up next time you start a session** so you don't lose the chance. If you want it sooner, just say 'build my first artifact' anytime."
+
+**If they want to build it:** read the relevant template, walk through populating it with the user's actual data and voice. Keep it light — five to ten minutes total. Don't try to fill every section; capture what matters and leave reasonable placeholders for the user to fill in over time.
+
+Save the result to the appropriate `WORK AREAS/` location with the standard naming convention. If the project folder doesn't exist, create it with `project-brief.md` and `memory.md` inside.
+
+| Artifact | Save to |
+|---|---|
+| 90-day priorities | `WORK AREAS/Admin-PA/strategic-priorities-project/outputs/90-Day-Priorities_v1.md` |
+| Branch dashboard | `WORK AREAS/Admin-PA/branch-performance-project/outputs/[Branch]_Performance-Dashboard_v1.md` |
+| Vendor scorecard | `WORK AREAS/Procurement-Vendors/[vendor-slug]-scorecard-project/outputs/[Vendor]_Scorecard_v1.md` |
+| Top-25 tracker | `WORK AREAS/Customer-Accounts/top-25-tracker-project/outputs/Top-25-Account-Tracker_v1.md` |
+| Customer quote template | `WORK AREAS/Sales-Ops/quote-templates-project/outputs/Quote-Response-Template_v1.md` |
+| AR collection matrix | `WORK AREAS/Finance/ar-collection-priorities-project/outputs/AR-Collection-Matrix_v1.md` |
+| Weekly review template | `WORK AREAS/Admin-PA/weekly-review-project/outputs/Weekly-Review-Template_v1.md` |
+
+After saving, close the artifact step:
+
+> "Your [artifact name] is at `[full path]`. Use it before [next time it's relevant — vendor QBR, weekly review, AR triage]. Come back in your next session and we'll iterate. **This is the kind of thing this system does well — real work, in your voice, with your data.**"
+
+### Step 8: Wrap and handoff
 
 After the four USER/ files are populated, do three things:
 

@@ -62,28 +62,66 @@ After completing each day, update `First-Week-Guide_Progress.md` (see `reference
 
 This means the user can close the session after any day and pick up later in a fresh session — the UI task panel rebuilds from this file when the skill triggers next time.
 
-## Starting the guide
+## Starting the guide — multi-select with role-based recommendations
 
-When the user first triggers this skill, use AskUserQuestion:
+When the user first triggers this skill, **don't force them through all 5 days**. Read their role from `ABOUT ME/about-me.md` first, then suggest the days that fit their job.
 
-"Welcome to your first week with CoWork for Distributors. Five days, five real tasks — each one shows you what this system can do with a real piece of distributor work. Where would you like to start?"
+### Role → recommended days
 
-Options based on progress:
-- If no progress file: "Day 1: Vendor email in your voice", "Tell me what this is first", "Jump to a specific day"
-- If some complete: "Continue with Day [next]", "Redo a previous day", "Jump to a specific day"
-- If all five complete: "You've finished the five-day guide. Want to redo any, explore on your own, or hear about what comes after?"
+| Role | Days that fit |
+|---|---|
+| Owner / President / GM / VP | Days 1, 4, 5 (vendor pushback, dead-stock, top-account QBR) |
+| Branch Manager | Days 1, 2, 4 (vendor, AR, dead-stock) |
+| Outside Sales | Days 1, 3, 5 (vendor, customer quote, QBR) |
+| Inside Sales / Counter / Quote Desk | Day 3 (customer quote) |
+| Purchasing | Days 1, 4 (vendor, dead-stock) |
+| Finance / AR / Credit | Day 2 (AR triage) |
+| Other / Multi-role / Unclear | All 5 |
 
-If they ask "Tell me what this is first":
+### The opening question
 
-"Five days of guided tasks. Each focuses on one thing this system can do with your actual business data, and each produces output you keep.
+Use AskUserQuestion:
 
-- **Day 1:** A vendor email in your voice (no data needed — just your writing-rules and voice-profile)
-- **Day 2:** An AR aging triage (bring your ERP aging export)
-- **Day 3:** A customer quote or RFQ response (a real one on your desk works best)
-- **Day 4:** A monthly dead-stock / slow-mover analysis (bring an inventory export)
-- **Day 5:** A top-account QBR prep (pick a real account)
+> "Welcome to your first week with CoWork for Distributors. There are 5 days of guided tasks here — each one produces real output you keep. Not every day fits every role, though. Based on yours ([role from about-me.md]), I'd suggest **[recommended days]**. What would you like?"
 
-You can do them in order or jump around, but the order builds on itself — Day 5 is most useful once you've seen the data-in, data-out pattern from Days 2 and 4."
+Options based on the user's role:
+- "[Recommended subset]" — list the suggested day numbers and titles, e.g., "Days 1, 4, 5 — vendor pushback, dead-stock, top-account QBR"
+- "All 5 days"
+- "Let me pick"
+- "Tell me what each day is first"
+
+**If "Let me pick":** ask the user to type the day numbers they want (e.g., "1, 3, 5") OR walk through each day with a yes/no question. Either approach works; pick whichever feels more conversational for this particular user.
+
+**If "Tell me what each day is first":** present the full menu:
+
+> "Five days of guided tasks. Each focuses on one thing this system can do with your actual business data, and each produces output you keep.
+>
+> - **Day 1:** A vendor email in your voice (no data needed — just your voice/writing rules)
+> - **Day 2:** An AR aging triage (bring your ERP aging export)
+> - **Day 3:** A customer quote or RFQ response (a real one on your desk works best)
+> - **Day 4:** A monthly dead-stock / slow-mover analysis (bring an inventory export)
+> - **Day 5:** A top-account QBR prep (pick a real account)
+>
+> Pick the ones that match your work. Day 5 makes most sense if you've also seen the data-in / data-out pattern from Days 2 and 4 — but you can do them in any order."
+
+Then re-ask which days the user wants.
+
+### After selection
+
+Track the selected days in:
+1. The persistent progress file (`WORK AREAS/Admin-PA/first-week-guide-project/outputs/First-Week-Guide_Progress.md`)
+2. The chat UI task panel — show ONLY the selected days as tasks, not all 5
+
+Walk through only the selected days. **Skip the rest.** When the user finishes their last selected day, close the guide rather than nagging them about days they explicitly didn't pick. They can always come back and trigger this skill again to add more days later.
+
+### Returning users
+
+If the progress file shows some days complete and the skill is triggered again, ask:
+
+- "Continue with Day [next of the originally-selected days]"
+- "Add a day I didn't originally select" — let them pick from days not yet done
+- "Redo a previous day"
+- "I'm done with the guide"
 
 ---
 
