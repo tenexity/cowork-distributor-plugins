@@ -1,0 +1,12 @@
+{
+  "name": "tenexity",
+  "owner": {
+    "name": "Tenexity",
+    "email": "cowork@tenexity.ai"
+  },
+  "metadata": {
+    "description": "Plugins for HVAC and plumbing wholesale distributors using CoWork for Distributors. Built by Tenexity.",
+    "version": "0.1.0"
+  },
+  "plugins": []
+}
