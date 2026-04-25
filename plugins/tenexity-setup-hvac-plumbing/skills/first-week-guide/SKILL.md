@@ -33,6 +33,26 @@ Keep explanations tight. One or two sentences about why something works, then mo
 
 ## Tracking progress
 
+There are two layers of progress tracking. Do both.
+
+### Layer 1: UI task panel (so the user sees where they are in chat)
+
+**Use the task-tracking tool (TodoWrite, or whatever the equivalent in this CoWork session is called) to render the five days in the chat UI's progress panel** so the user can see how far they've come and what's next.
+
+At the very start of the skill — when the user first triggers it — create the task list with all five days:
+
+1. Day 1: Vendor email in your voice
+2. Day 2: AR aging triage
+3. Day 3: A real customer quote
+4. Day 4: Monthly dead-stock / slow-mover analysis
+5. Day 5: Top-account QBR prep
+
+Mark each day `in_progress` when you begin it and `completed` immediately when it's done. **Do not batch updates** — update as the user actually completes each day. If a day has substantial sub-steps (gather context, draft, iterate, save), you may add each as a sub-task during that day so the user sees real-time progress through the day's work.
+
+If the user has already done some days from a previous session (Layer 2 tells you), reflect that in the task list — mark already-completed days as `completed` from the start so the panel shows accurate state.
+
+### Layer 2: Persistent progress file (so progress survives across sessions)
+
 Before starting, check if the user has done any days already. Look for `WORK AREAS/Admin-PA/first-week-guide-project/outputs/First-Week-Guide_Progress.md`. If it exists, read it to see which days are complete and pick up where they left off. If the `first-week-guide-project/` folder doesn't exist, create it with a brief and memory.md inside Admin-PA/.
 
 After completing each day, update `First-Week-Guide_Progress.md` (see `references/progress-template.md`) with:
@@ -40,7 +60,7 @@ After completing each day, update `First-Week-Guide_Progress.md` (see `reference
 - What was produced
 - Any notes about what worked well or what the user wants to explore further
 
-This means the user can close the session after any day and pick up later in a fresh session.
+This means the user can close the session after any day and pick up later in a fresh session — the UI task panel rebuilds from this file when the skill triggers next time.
 
 ## Starting the guide
 
