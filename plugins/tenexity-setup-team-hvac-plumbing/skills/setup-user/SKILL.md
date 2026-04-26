@@ -176,29 +176,13 @@ Use the templates from `${CLAUDE_PLUGIN_ROOT}/reference/captains-log-format.md` 
 
 Tell the user one line: "PA file structure created in `WORK AREAS/Admin-PA/`. Logs, tasks, contacts, decisions, and inventory actions will all live there. **Per-user, not company-wide** — each employee's logs stay in their own workspace."
 
-#### 6b. Update CLAUDE.md with PA rules
+#### 6b. PA rules already active — no CLAUDE.md edit needed
 
-Append the following block to `CLAUDE.md` before the `## WHO I AM` section (or wherever the personalisation sections start):
+As of v1.2.1, the PA behavior rules are **pre-baked into the scaffold's `CLAUDE.md` file**. They become active automatically once the PA file structure exists at `WORK AREAS/Admin-PA/` (which you just created in 6a). **No CLAUDE.md edit. No re-paste required.**
 
-```markdown
-## PERSONAL ASSISTANT
+If the user already pasted `CLAUDE.md` into Global Instructions when they first set up the workspace, the PA rules are loaded — they just become active now that the file structure exists.
 
-The Personal Assistant plugin is active. These behaviours apply across all sessions:
-
-- **Captain's Log:** When the user is chatting conversationally (not working on a specific deliverable), treat it as captain's log input. Append timestamped entries to the current month's log file in `WORK AREAS/Admin-PA/captains-log/`. Create a new monthly file on the 1st of each month.
-- **Task extraction:** When conversation contains action items ("need to", "should", "have to", "follow up", "remind me"), create or update entries in `WORK AREAS/Admin-PA/tasks.md`. Use distributor-tuned signal phrases. Tag with vendor/customer/AR/inventory/internal as appropriate.
-- **Contact tracking:** When people are mentioned by name with context, update `WORK AREAS/Admin-PA/contacts.md`. Distinguish vendor / customer / internal / buying group / trade association / service provider / other types.
-- **Preference and decision capture:** When the user states a preference or makes a decision, log it in `WORK AREAS/Admin-PA/preferences.md`.
-- **Output tracking:** When you save a file to any `outputs/` folder, append a one-liner to `WORK AREAS/Admin-PA/output-log.md` — timestamp, filename, project context.
-- **Inventory action capture:** When the user pastes an ERP inventory export or describes an inventory decision, log to `WORK AREAS/Admin-PA/inventory-action-log.md` with the decision context.
-- **Vendor / customer tagging:** Read top vendor and customer lists from `ABOUT ME/COMPANY/company-profile.md`. Tag conversations mentioning them. Vendor-pulse and account-drift skills aggregate these tags weekly and monthly.
-- **Privacy:** Anything tagged `[private]` (sensitive personnel matters, salary discussions, HR escalations) stays out of System Review reports the company admin sees. In multi-user deployments, individual user logs are never shared without explicit user consent.
-- **Monthly rotation:** Captain's log files rotate monthly. Format: `YYYY-MM-captains-log.md`. At month's end, start a new file.
-```
-
-Then tell the user: "I've appended the Personal Assistant rules to your `CLAUDE.md`. **You'll need to re-paste `CLAUDE.md` into your CoWork Global Instructions** so the PA rules apply to every new session."
-
-Walk them through it: open `CLAUDE.md`, copy the entire contents, in CoWork open `Customise → Global Instructions`, paste, save.
+Don't dwell on this. Confirm in one line: "PA rules are active." Move to 6c.
 
 #### 6c. Set up the two PA scheduled tasks
 
