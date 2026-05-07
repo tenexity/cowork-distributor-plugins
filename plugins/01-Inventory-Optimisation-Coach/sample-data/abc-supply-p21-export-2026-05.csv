@@ -1,0 +1,251 @@
+Part Number,Description,Branch,On Hand Qty,Extended Cost,On Order,Allocated,Safety Stock,Reorder Point,Last Sold,Last Receipt,ATD Revenue,Average Cost,Category,ABC Class,XYZ Class
+CP-1-1/2-45L-BLK-81,"1-1/2"" 45° Elbow BLK",Atlanta,0,0.00,0,0,0,0,,2025-03-12,0.00,16.15,fittings,C,Z
+CP-1-1/2-45L-BLK-81,"1-1/2"" 45° Elbow BLK",Charlotte,0,0.00,0,1,0,0,,2025-02-15,0.00,16.15,fittings,C,Z
+CP-1-1/2-45L-BLK-81,"1-1/2"" 45° Elbow BLK",Phoenix,0,0.00,0,0,0,0,,2025-06-26,0.00,16.15,fittings,C,Z
+CP-1-1/2-45L-BLK-81,"1-1/2"" 45° Elbow BLK",Dallas,24,387.60,0,0,3,6,,2025-05-15,0.00,16.15,fittings,C,Z
+CP-1-1/2-45L-BLK-81,"1-1/2"" 45° Elbow BLK",Nashville,18,290.70,4,0,3,7,,2025-06-10,0.00,16.15,fittings,C,Z
+CP-1-1/2-45L-PEX-199,"1-1/2"" 45° Elbow PEX",Atlanta,204,2262.36,0,0,25,50,,2025-06-23,0.00,11.09,fittings,B,Y
+CP-1-1/2-45L-PEX-199,"1-1/2"" 45° Elbow PEX",Charlotte,0,0.00,0,0,0,0,,2025-02-19,0.00,11.09,fittings,B,Y
+CP-1-1/2-45L-PEX-199,"1-1/2"" 45° Elbow PEX",Phoenix,240,2661.60,0,3,28,57,,2025-01-16,0.00,11.09,fittings,B,Y
+CP-1-1/2-45L-PEX-199,"1-1/2"" 45° Elbow PEX",Dallas,129,1430.61,0,0,26,52,,2025-03-13,0.00,11.09,fittings,B,Y
+CP-1-1/2-45L-PEX-199,"1-1/2"" 45° Elbow PEX",Nashville,0,0.00,0,0,0,0,,2025-05-04,0.00,11.09,fittings,B,Y
+CP-1-1/2-90L-PEX-697,"1-1/2"" 90° Elbow PEX",Atlanta,797,6686.83,0,0,143,287,,2025-03-09,0.00,8.39,fittings,A,X
+CP-1-1/2-90L-PEX-697,"1-1/2"" 90° Elbow PEX",Charlotte,827,6938.53,0,0,104,208,,2025-01-17,0.00,8.39,fittings,A,X
+CP-1-1/2-90L-PEX-697,"1-1/2"" 90° Elbow PEX",Phoenix,308,2584.12,0,0,59,119,,2025-05-12,0.00,8.39,fittings,A,X
+CP-1-1/2-90L-PEX-697,"1-1/2"" 90° Elbow PEX",Dallas,349,2928.11,0,0,65,131,,2025-06-03,0.00,8.39,fittings,A,X
+CP-1-1/2-90L-PEX-697,"1-1/2"" 90° Elbow PEX",Nashville,797,6686.83,0,5,140,279,,2025-03-26,0.00,8.39,fittings,A,X
+CP-1-1/2-C-BRASS-373,"1-1/2"" Coupling BRASS",Atlanta,3267,45541.98,0,0,101,201,2026-04-30,2026-04-18,3664.28,13.94,fittings,A,X
+CP-1-1/2-C-BRASS-373,"1-1/2"" Coupling BRASS",Charlotte,583,8127.02,0,0,119,238,2026-05-01,2026-04-26,2575.88,13.94,fittings,A,X
+CP-1-1/2-C-BRASS-373,"1-1/2"" Coupling BRASS",Phoenix,685,9548.90,0,30,136,273,2026-05-05,2026-04-16,2303.78,13.94,fittings,A,X
+CP-1-1/2-C-BRASS-373,"1-1/2"" Coupling BRASS",Dallas,654,9116.76,0,0,96,192,2026-05-02,2026-04-03,3990.80,13.94,fittings,A,X
+CP-1-1/2-C-BRASS-373,"1-1/2"" Coupling BRASS",Nashville,563,7848.22,0,4,113,225,2026-05-06,2026-04-10,2358.20,13.94,fittings,A,X
+CP-1-1/2-CAP-PVC-436,"1-1/2"" Cap PVC",Atlanta,722,11746.94,0,0,133,267,2026-05-04,2026-04-16,4410.00,16.27,fittings,A,X
+CP-1-1/2-CAP-PVC-436,"1-1/2"" Cap PVC",Charlotte,332,5401.64,0,0,57,113,2026-05-05,2026-04-10,3665.20,16.27,fittings,A,X
+CP-1-1/2-CAP-PVC-436,"1-1/2"" Cap PVC",Phoenix,707,11502.89,0,17,115,230,2026-04-30,2026-04-13,2685.20,16.27,fittings,A,X
+CP-1-1/2-CAP-PVC-436,"1-1/2"" Cap PVC",Dallas,352,5727.04,0,0,80,161,2026-05-01,2026-04-13,4527.60,16.27,fittings,A,X
+CP-1-1/2-CAP-PVC-436,"1-1/2"" Cap PVC",Nashville,405,6589.35,0,0,48,96,2026-05-04,2026-04-10,2842.00,16.27,fittings,A,X
+CP-1-1/2-CAP-PVC-94,"1-1/2"" Cap PVC",Atlanta,0,0.00,0,0,0,0,,2025-05-21,0.00,8.66,fittings,C,Z
+CP-1-1/2-CAP-PVC-94,"1-1/2"" Cap PVC",Charlotte,0,0.00,0,0,0,0,,2025-04-26,0.00,8.66,fittings,C,Z
+CP-1-1/2-CAP-PVC-94,"1-1/2"" Cap PVC",Phoenix,6,51.96,4,0,1,2,,2025-01-19,0.00,8.66,fittings,C,Z
+CP-1-1/2-CAP-PVC-94,"1-1/2"" Cap PVC",Dallas,26,225.16,0,0,3,7,,2025-03-23,0.00,8.66,fittings,C,Z
+CP-1-1/2-CAP-PVC-94,"1-1/2"" Cap PVC",Nashville,0,0.00,0,0,0,0,,2025-03-06,0.00,8.66,fittings,C,Z
+CP-1-1/2-RED-BRASS-348,"1-1/2"" Reducer BRASS",Atlanta,612,8488.44,0,0,79,159,,2025-02-03,0.00,13.87,fittings,A,X
+CP-1-1/2-RED-BRASS-348,"1-1/2"" Reducer BRASS",Charlotte,236,3273.32,0,0,38,75,,2025-02-03,0.00,13.87,fittings,A,X
+CP-1-1/2-RED-BRASS-348,"1-1/2"" Reducer BRASS",Phoenix,766,10624.42,0,0,112,223,,2025-06-18,0.00,13.87,fittings,A,X
+CP-1-1/2-RED-BRASS-348,"1-1/2"" Reducer BRASS",Dallas,425,5894.75,0,0,77,154,,2025-02-03,0.00,13.87,fittings,A,X
+CP-1-1/2-RED-BRASS-348,"1-1/2"" Reducer BRASS",Nashville,423,5867.01,0,0,94,187,,2025-01-20,0.00,13.87,fittings,A,X
+CP-1-1/2-T-BLK-122,"1-1/2"" Tee BLK",Atlanta,71,1216.94,0,0,9,18,2026-05-04,2026-03-29,589.28,17.14,fittings,B,Y
+CP-1-1/2-T-BLK-122,"1-1/2"" Tee BLK",Charlotte,130,2228.20,0,0,20,40,2026-04-25,2026-03-23,487.68,17.14,fittings,B,Y
+CP-1-1/2-T-BLK-122,"1-1/2"" Tee BLK",Phoenix,67,1148.38,0,0,10,21,2026-04-27,2026-03-17,386.08,17.14,fittings,B,Y
+CP-1-1/2-T-BLK-122,"1-1/2"" Tee BLK",Dallas,0,0.00,0,1,0,0,2026-05-03,2026-03-29,589.28,17.14,fittings,B,Y
+CP-1-1/2-T-BLK-122,"1-1/2"" Tee BLK",Nashville,62,1062.68,0,0,8,16,2026-04-19,2026-02-11,345.44,17.14,fittings,B,Y
+CP-1-1/2-T-BRASS-134,"1-1/2"" Tee BRASS",Atlanta,664,8698.40,0,0,112,224,2026-05-01,2026-04-09,3973.08,13.10,fittings,A,X
+CP-1-1/2-T-BRASS-134,"1-1/2"" Tee BRASS",Charlotte,376,4925.60,0,1,48,96,2026-05-03,2026-04-29,2971.02,13.10,fittings,A,X
+CP-1-1/2-T-BRASS-134,"1-1/2"" Tee BRASS",Phoenix,1072,14043.20,0,0,130,261,2026-05-05,2026-04-19,2127.18,13.10,fittings,A,X
+CP-1-1/2-T-BRASS-134,"1-1/2"" Tee BRASS",Dallas,554,7257.40,0,0,118,236,2026-05-06,2026-04-25,4148.88,13.10,fittings,A,X
+CP-1-1/2-T-BRASS-134,"1-1/2"" Tee BRASS",Nashville,292,3825.20,0,0,53,107,2026-05-06,2026-04-05,2443.62,13.10,fittings,A,X
+CP-1-1/2-T-CPVC-74,"1-1/2"" Tee CPVC",Atlanta,22,96.80,0,0,3,5,,2025-03-13,0.00,4.40,fittings,C,Y
+CP-1-1/2-T-CPVC-74,"1-1/2"" Tee CPVC",Charlotte,22,96.80,0,0,3,6,,2025-05-17,0.00,4.40,fittings,C,Y
+CP-1-1/2-T-CPVC-74,"1-1/2"" Tee CPVC",Phoenix,12,52.80,0,0,2,3,,2025-05-09,0.00,4.40,fittings,C,Y
+CP-1-1/2-T-CPVC-74,"1-1/2"" Tee CPVC",Dallas,0,0.00,4,0,0,0,,2025-04-03,0.00,4.40,fittings,C,Y
+CP-1-1/2-T-CPVC-74,"1-1/2"" Tee CPVC",Nashville,14,61.60,0,0,2,4,,2025-03-04,0.00,4.40,fittings,C,Y
+CP-1-1/2-T-PEX-98,"1-1/2"" Tee PEX",Atlanta,0,0.00,0,0,0,0,,2025-01-09,0.00,12.14,fittings,C,Z
+CP-1-1/2-T-PEX-98,"1-1/2"" Tee PEX",Charlotte,0,0.00,0,0,0,0,,2025-06-29,0.00,12.14,fittings,C,Z
+CP-1-1/2-T-PEX-98,"1-1/2"" Tee PEX",Phoenix,0,0.00,0,1,0,0,,2025-03-01,0.00,12.14,fittings,C,Z
+CP-1-1/2-T-PEX-98,"1-1/2"" Tee PEX",Dallas,0,0.00,0,0,0,0,,2025-05-24,0.00,12.14,fittings,C,Z
+CP-1-1/2-T-PEX-98,"1-1/2"" Tee PEX",Nashville,20,242.80,0,0,2,5,,2025-05-05,0.00,12.14,fittings,C,Z
+CP-1-1/4-45L-CPVC-42,"1-1/4"" 45° Elbow CPVC",Atlanta,0,0.00,4,1,0,0,,2025-01-19,0.00,16.21,fittings,C,Y
+CP-1-1/4-45L-CPVC-42,"1-1/4"" 45° Elbow CPVC",Charlotte,0,0.00,0,0,0,0,,2025-05-10,0.00,16.21,fittings,C,Y
+CP-1-1/4-45L-CPVC-42,"1-1/4"" 45° Elbow CPVC",Phoenix,9,145.89,0,1,1,2,,2025-03-11,0.00,16.21,fittings,C,Y
+CP-1-1/4-45L-CPVC-42,"1-1/4"" 45° Elbow CPVC",Dallas,5,81.05,0,0,1,2,,2025-04-16,0.00,16.21,fittings,C,Y
+CP-1-1/4-45L-CPVC-42,"1-1/4"" 45° Elbow CPVC",Nashville,0,0.00,0,0,0,0,,2025-06-27,0.00,16.21,fittings,C,Y
+CP-1-1/4-90L-BRASS-59,"1-1/4"" 90° Elbow BRASS",Atlanta,0,0.00,0,0,0,0,2026-05-03,2026-02-18,207.60,2.65,fittings,C,X
+CP-1-1/4-90L-BRASS-59,"1-1/4"" 90° Elbow BRASS",Charlotte,0,0.00,0,0,0,0,2026-04-30,2026-03-30,117.64,2.65,fittings,C,X
+CP-1-1/4-90L-BRASS-59,"1-1/4"" 90° Elbow BRASS",Phoenix,0,0.00,0,0,0,0,2026-04-26,2026-03-05,107.26,2.65,fittings,C,X
+CP-1-1/4-90L-BRASS-59,"1-1/4"" 90° Elbow BRASS",Dallas,0,0.00,4,0,0,0,2026-04-24,2026-02-17,134.94,2.65,fittings,C,X
+CP-1-1/4-90L-BRASS-59,"1-1/4"" 90° Elbow BRASS",Nashville,12,31.80,0,0,2,4,2026-04-18,2026-03-02,100.34,2.65,fittings,C,X
+CP-1-1/4-90L-CPVC-3,"1-1/4"" 90° Elbow CPVC",Atlanta,121,2200.99,0,0,15,30,,2025-06-02,0.00,18.19,fittings,B,Y
+CP-1-1/4-90L-CPVC-3,"1-1/4"" 90° Elbow CPVC",Charlotte,118,2146.42,0,0,24,48,,2025-04-04,0.00,18.19,fittings,B,Y
+CP-1-1/4-90L-CPVC-3,"1-1/4"" 90° Elbow CPVC",Phoenix,122,2219.18,0,0,18,36,,2025-05-16,0.00,18.19,fittings,B,Y
+CP-1-1/4-90L-CPVC-3,"1-1/4"" 90° Elbow CPVC",Dallas,0,0.00,0,0,0,0,,2025-01-29,0.00,18.19,fittings,B,Y
+CP-1-1/4-90L-CPVC-3,"1-1/4"" 90° Elbow CPVC",Nashville,83,1509.77,0,0,13,25,,2025-03-23,0.00,18.19,fittings,B,Y
+CP-1-1/4-90L-CU-14,"1-1/4"" 90° Elbow CU",Atlanta,5,87.60,0,1,1,2,2026-05-04,2026-03-14,520.56,17.52,fittings,C,X
+CP-1-1/4-90L-CU-14,"1-1/4"" 90° Elbow CU",Charlotte,0,0.00,0,0,0,0,2026-04-19,2026-04-05,412.11,17.52,fittings,C,X
+CP-1-1/4-90L-CU-14,"1-1/4"" 90° Elbow CU",Phoenix,0,0.00,0,0,0,0,2026-05-04,2026-02-19,325.35,17.52,fittings,C,X
+CP-1-1/4-90L-CU-14,"1-1/4"" 90° Elbow CU",Dallas,0,0.00,0,0,0,0,2026-04-17,2026-02-01,542.25,17.52,fittings,C,X
+CP-1-1/4-90L-CU-14,"1-1/4"" 90° Elbow CU",Nashville,0,0.00,0,0,0,0,2026-04-19,2026-02-11,347.04,17.52,fittings,C,X
+CP-1-1/4-90L-PEX-8,"1-1/4"" 90° Elbow PEX",Atlanta,24,429.84,4,0,3,6,,2025-04-14,0.00,17.91,fittings,C,X
+CP-1-1/4-90L-PEX-8,"1-1/4"" 90° Elbow PEX",Charlotte,28,501.48,0,0,4,8,,2025-06-12,0.00,17.91,fittings,C,X
+CP-1-1/4-90L-PEX-8,"1-1/4"" 90° Elbow PEX",Phoenix,0,0.00,4,0,0,0,,2025-06-24,0.00,17.91,fittings,C,X
+CP-1-1/4-90L-PEX-8,"1-1/4"" 90° Elbow PEX",Dallas,0,0.00,0,0,0,0,,2025-06-26,0.00,17.91,fittings,C,X
+CP-1-1/4-90L-PEX-8,"1-1/4"" 90° Elbow PEX",Nashville,0,0.00,0,0,0,0,,2025-04-14,0.00,17.91,fittings,C,X
+CP-1-1/4-90L-PVC-57,"1-1/4"" 90° Elbow PVC",Atlanta,14,187.74,0,1,3,6,2026-05-01,2026-03-21,866.18,13.41,fittings,C,Y
+CP-1-1/4-90L-PVC-57,"1-1/4"" 90° Elbow PVC",Charlotte,0,0.00,0,1,0,0,2026-04-25,2026-04-15,677.88,13.41,fittings,C,Y
+CP-1-1/4-90L-PVC-57,"1-1/4"" 90° Elbow PVC",Phoenix,0,0.00,0,0,0,0,2026-04-21,2026-04-22,451.92,13.41,fittings,C,Y
+CP-1-1/4-90L-PVC-57,"1-1/4"" 90° Elbow PVC",Dallas,0,0.00,0,0,0,0,2026-04-26,2026-04-06,734.37,13.41,fittings,C,Y
+CP-1-1/4-90L-PVC-57,"1-1/4"" 90° Elbow PVC",Nashville,0,0.00,0,1,0,0,2026-05-03,2026-03-30,527.24,13.41,fittings,C,Y
+CP-1-1/4-CAP-BRASS-421,"1-1/4"" Cap BRASS",Atlanta,888,8453.76,0,0,116,232,,2025-02-26,0.00,9.52,fittings,A,X
+CP-1-1/4-CAP-BRASS-421,"1-1/4"" Cap BRASS",Charlotte,669,6368.88,0,0,93,187,,2025-02-26,0.00,9.52,fittings,A,X
+CP-1-1/4-CAP-BRASS-421,"1-1/4"" Cap BRASS",Phoenix,223,2122.96,0,0,43,86,,2025-02-10,0.00,9.52,fittings,A,X
+CP-1-1/4-CAP-BRASS-421,"1-1/4"" Cap BRASS",Dallas,364,3465.28,0,0,82,163,,2025-06-27,0.00,9.52,fittings,A,X
+CP-1-1/4-CAP-BRASS-421,"1-1/4"" Cap BRASS",Nashville,666,6340.32,168,0,101,203,,2025-02-07,0.00,9.52,fittings,A,X
+CP-1-1/4-CAP-CPVC-9,"1-1/4"" Cap CPVC",Atlanta,195,932.10,0,0,27,54,2026-04-16,2026-02-01,93.28,4.78,fittings,B,Y
+CP-1-1/4-CAP-CPVC-9,"1-1/4"" Cap CPVC",Charlotte,120,573.60,0,0,26,52,2026-04-18,2026-03-15,75.79,4.78,fittings,B,Y
+CP-1-1/4-CAP-CPVC-9,"1-1/4"" Cap CPVC",Phoenix,0,0.00,0,0,0,0,2026-05-02,2026-03-12,52.47,4.78,fittings,B,Y
+CP-1-1/4-CAP-CPVC-9,"1-1/4"" Cap CPVC",Dallas,78,372.84,0,0,15,31,2026-04-19,2026-02-02,81.62,4.78,fittings,B,Y
+CP-1-1/4-CAP-CPVC-9,"1-1/4"" Cap CPVC",Nashville,120,573.60,0,0,18,36,2026-05-05,2026-04-10,64.13,4.78,fittings,B,Y
+CP-1-1/4-RED-PEX-87,"1-1/4"" Reducer PEX",Atlanta,0,0.00,35,5,0,0,2026-04-18,2026-02-28,187.20,11.53,fittings,B,Y
+CP-1-1/4-RED-PEX-87,"1-1/4"" Reducer PEX",Charlotte,57,657.21,0,0,9,19,2026-04-20,2026-04-19,129.60,11.53,fittings,B,Y
+CP-1-1/4-RED-PEX-87,"1-1/4"" Reducer PEX",Phoenix,102,1176.06,0,0,18,37,2026-04-19,2026-02-17,115.20,11.53,fittings,B,Y
+CP-1-1/4-RED-PEX-87,"1-1/4"" Reducer PEX",Dallas,169,1948.57,0,0,23,46,2026-05-01,2026-02-22,172.80,11.53,fittings,B,Y
+CP-1-1/4-RED-PEX-87,"1-1/4"" Reducer PEX",Nashville,114,1314.42,0,6,19,38,2026-04-30,2026-02-25,129.60,11.53,fittings,B,Y
+CP-1-45L-CPVC-85,"1"" 45° Elbow CPVC",Atlanta,0,0.00,0,0,0,0,2026-04-19,2026-04-11,598.92,9.79,fittings,B,Y
+CP-1-45L-CPVC-85,"1"" 45° Elbow CPVC",Charlotte,194,1899.26,0,6,27,53,2026-04-20,2026-02-03,455.70,9.79,fittings,B,Y
+CP-1-45L-CPVC-85,"1"" 45° Elbow CPVC",Phoenix,0,0.00,0,0,0,0,2026-04-26,2026-02-10,338.52,9.79,fittings,B,Y
+CP-1-45L-CPVC-85,"1"" 45° Elbow CPVC",Dallas,56,548.24,0,0,9,17,2026-04-16,2026-02-16,442.68,9.79,fittings,B,Y
+CP-1-45L-CPVC-85,"1"" 45° Elbow CPVC",Nashville,0,0.00,0,0,0,0,2026-05-02,2026-02-13,351.54,9.79,fittings,B,Y
+CP-1-90L-CPVC-63,"1"" 90° Elbow CPVC",Atlanta,9,88.65,0,0,1,2,,2025-04-11,0.00,9.85,fittings,C,Y
+CP-1-90L-CPVC-63,"1"" 90° Elbow CPVC",Charlotte,0,0.00,0,0,0,0,,2025-05-17,0.00,9.85,fittings,C,Y
+CP-1-90L-CPVC-63,"1"" 90° Elbow CPVC",Phoenix,13,128.05,0,0,2,4,,2025-05-09,0.00,9.85,fittings,C,Y
+CP-1-90L-CPVC-63,"1"" 90° Elbow CPVC",Dallas,0,0.00,0,0,0,0,,2025-01-14,0.00,9.85,fittings,C,Y
+CP-1-90L-CPVC-63,"1"" 90° Elbow CPVC",Nashville,0,0.00,0,0,0,0,,2025-06-13,0.00,9.85,fittings,C,Y
+CP-1-90L-PEX-643,"1"" 90° Elbow PEX",Atlanta,759,9047.28,0,1,134,268,2026-05-02,2026-04-29,1509.20,11.92,fittings,A,X
+CP-1-90L-PEX-643,"1"" 90° Elbow PEX",Charlotte,977,11645.84,0,0,121,242,2026-05-01,2026-04-10,1097.60,11.92,fittings,A,X
+CP-1-90L-PEX-643,"1"" 90° Elbow PEX",Phoenix,543,6472.56,0,0,65,129,2026-05-03,2026-04-13,806.05,11.92,fittings,A,X
+CP-1-90L-PEX-643,"1"" 90° Elbow PEX",Dallas,558,6651.36,0,0,98,196,2026-05-04,2026-04-05,1200.50,11.92,fittings,A,X
+CP-1-90L-PEX-643,"1"" 90° Elbow PEX",Nashville,1114,13278.88,0,0,130,260,2026-05-03,2026-04-09,926.10,11.92,fittings,A,X
+CP-1-C-CPVC-620,"1"" Coupling CPVC",Atlanta,651,5754.84,0,0,121,243,,2025-06-11,0.00,8.84,fittings,A,X
+CP-1-C-CPVC-620,"1"" Coupling CPVC",Charlotte,460,4066.40,0,2,84,168,,2025-02-11,0.00,8.84,fittings,A,X
+CP-1-C-CPVC-620,"1"" Coupling CPVC",Phoenix,244,2156.96,0,19,55,109,,2025-06-23,0.00,8.84,fittings,A,X
+CP-1-C-CPVC-620,"1"" Coupling CPVC",Dallas,542,4791.28,0,0,72,144,,2025-06-08,0.00,8.84,fittings,A,X
+CP-1-C-CPVC-620,"1"" Coupling CPVC",Nashville,656,5799.04,0,0,88,176,,2025-06-26,0.00,8.84,fittings,A,X
+CP-1-CAP-CPVC-174,"1"" Cap CPVC",Atlanta,91,1478.75,0,0,21,42,2026-04-20,2026-02-09,868.80,16.25,fittings,B,Y
+CP-1-CAP-CPVC-174,"1"" Cap CPVC",Charlotte,78,1267.50,0,8,11,22,2026-05-02,2026-03-14,760.20,16.25,fittings,B,Y
+CP-1-CAP-CPVC-174,"1"" Cap CPVC",Phoenix,63,1023.75,0,0,10,21,2026-04-22,2026-04-11,499.56,16.25,fittings,B,Y
+CP-1-CAP-CPVC-174,"1"" Cap CPVC",Dallas,145,2356.25,0,0,25,50,2026-04-22,2026-04-17,716.76,16.25,fittings,B,Y
+CP-1-CAP-CPVC-174,"1"" Cap CPVC",Nashville,0,0.00,0,0,0,0,2026-04-22,2026-03-13,586.44,16.25,fittings,B,Y
+CP-1-RED-CU-196,"1"" Reducer CU",Atlanta,59,967.60,0,0,11,22,2026-04-25,2026-04-21,995.93,16.40,fittings,B,Y
+CP-1-RED-CU-196,"1"" Reducer CU",Charlotte,75,1230.00,0,0,14,28,2026-04-29,2026-03-09,656.89,16.40,fittings,B,Y
+CP-1-RED-CU-196,"1"" Reducer CU",Phoenix,0,0.00,0,0,0,0,2026-05-01,2026-02-03,402.61,16.40,fittings,B,Y
+CP-1-RED-CU-196,"1"" Reducer CU",Dallas,76,1246.40,0,0,11,22,2026-05-02,2026-02-05,656.89,16.40,fittings,B,Y
+CP-1-RED-CU-196,"1"" Reducer CU",Nashville,163,2673.20,0,3,27,55,2026-04-18,2026-02-27,572.13,16.40,fittings,B,Y
+CP-1-T-PEX-1,"1"" Tee PEX",Atlanta,0,0.00,0,0,0,0,2026-04-18,2026-02-15,55.68,1.65,fittings,C,Y
+CP-1-T-PEX-1,"1"" Tee PEX",Charlotte,0,0.00,0,1,0,0,2026-04-18,2026-02-25,46.40,1.65,fittings,C,Y
+CP-1-T-PEX-1,"1"" Tee PEX",Phoenix,0,0.00,0,1,0,0,2026-04-28,2026-02-03,34.80,1.65,fittings,C,Y
+CP-1-T-PEX-1,"1"" Tee PEX",Dallas,0,0.00,0,0,0,0,2026-05-04,2026-02-22,46.40,1.65,fittings,C,Y
+CP-1-T-PEX-1,"1"" Tee PEX",Nashville,36,59.40,0,1,5,9,2026-05-05,2026-02-10,34.80,1.65,fittings,C,Y
+CP-1-UN-PEX-13,"1"" Union PEX",Atlanta,0,0.00,0,0,0,0,2026-04-23,2026-02-23,510.04,10.05,fittings,C,Z
+CP-1-UN-PEX-13,"1"" Union PEX",Charlotte,7,70.35,0,0,0,0,2026-04-22,2026-04-13,348.32,10.05,fittings,C,Z
+CP-1-UN-PEX-13,"1"" Union PEX",Phoenix,0,0.00,0,0,0,0,2026-04-20,2026-02-15,261.24,10.05,fittings,C,Z
+CP-1-UN-PEX-13,"1"" Union PEX",Dallas,0,0.00,4,0,0,0,2026-04-21,2026-02-21,398.08,10.05,fittings,C,Z
+CP-1-UN-PEX-13,"1"" Union PEX",Nashville,0,0.00,0,0,0,0,2026-04-18,2026-03-27,261.24,10.05,fittings,C,Z
+CP-1/2-RED-PVC-111,"1/2"" Reducer PVC",Atlanta,0,0.00,0,0,0,0,2026-04-26,2026-03-07,925.65,12.66,fittings,B,Y
+CP-1/2-RED-PVC-111,"1/2"" Reducer PVC",Charlotte,0,0.00,0,0,0,0,2026-04-19,2026-03-21,671.55,12.66,fittings,B,Y
+CP-1/2-RED-PVC-111,"1/2"" Reducer PVC",Phoenix,14,177.24,0,2,0,0,2026-04-28,2026-03-20,453.75,12.66,fittings,B,Y
+CP-1/2-RED-PVC-111,"1/2"" Reducer PVC",Dallas,0,0.00,0,0,0,0,2026-04-24,2026-03-04,744.15,12.66,fittings,B,Y
+CP-1/2-RED-PVC-111,"1/2"" Reducer PVC",Nashville,0,0.00,0,0,0,0,2026-05-02,2026-04-16,617.10,12.66,fittings,B,Y
+CP-2-45L-CPVC-25,"2"" 45° Elbow CPVC",Atlanta,0,0.00,0,0,0,0,,2025-03-12,0.00,15.20,fittings,C,X
+CP-2-45L-CPVC-25,"2"" 45° Elbow CPVC",Charlotte,0,0.00,4,1,0,0,,2025-02-08,0.00,15.20,fittings,C,X
+CP-2-45L-CPVC-25,"2"" 45° Elbow CPVC",Phoenix,0,0.00,0,0,0,0,,2025-03-18,0.00,15.20,fittings,C,X
+CP-2-45L-CPVC-25,"2"" 45° Elbow CPVC",Dallas,15,228.00,0,0,0,0,,2025-03-09,0.00,15.20,fittings,C,X
+CP-2-45L-CPVC-25,"2"" 45° Elbow CPVC",Nashville,0,0.00,0,0,0,0,,2025-04-14,0.00,15.20,fittings,C,X
+CP-3-C-PVC-47,"3"" Coupling PVC",Atlanta,0,0.00,0,0,0,0,2026-05-05,2026-02-21,542.13,7.85,fittings,B,Y
+CP-3-C-PVC-47,"3"" Coupling PVC",Charlotte,0,0.00,0,0,0,0,2026-04-30,2026-02-23,340.16,7.85,fittings,B,Y
+CP-3-C-PVC-47,"3"" Coupling PVC",Phoenix,0,0.00,0,0,0,0,2026-04-26,2026-04-03,233.86,7.85,fittings,B,Y
+CP-3-C-PVC-47,"3"" Coupling PVC",Dallas,0,0.00,0,0,0,0,2026-04-27,2026-02-23,467.72,7.85,fittings,B,Y
+CP-3-C-PVC-47,"3"" Coupling PVC",Nashville,12,94.20,0,0,0,0,2026-05-02,2026-03-09,287.01,7.85,fittings,B,Y
+CP-3/4-45L-PEX-685,"3/4"" 45° Elbow PEX",Atlanta,0,0.00,0,0,0,0,2026-05-02,2026-04-15,1367.26,7.04,fittings,A,X
+CP-3/4-45L-PEX-685,"3/4"" 45° Elbow PEX",Charlotte,0,0.00,168,0,0,0,2026-05-05,2026-04-30,1107.78,7.04,fittings,A,X
+CP-3/4-45L-PEX-685,"3/4"" 45° Elbow PEX",Phoenix,0,0.00,0,0,0,0,2026-04-30,2026-04-29,798.40,7.04,fittings,A,X
+CP-3/4-45L-PEX-685,"3/4"" 45° Elbow PEX",Dallas,13,91.52,0,2,0,0,2026-05-04,2026-04-16,1407.18,7.04,fittings,A,X
+CP-3/4-45L-PEX-685,"3/4"" 45° Elbow PEX",Nashville,0,0.00,0,34,0,0,2026-05-03,2026-04-16,998.00,7.04,fittings,A,X
+CP-4-C-CU-232,"4"" Coupling CU",Atlanta,0,0.00,0,0,0,0,2026-05-03,2026-04-10,492.68,1.64,fittings,A,X
+CP-4-C-CU-232,"4"" Coupling CU",Charlotte,4,6.56,0,29,0,0,2026-04-30,2026-04-26,364.06,1.64,fittings,A,X
+CP-4-C-CU-232,"4"" Coupling CU",Phoenix,0,0.00,168,0,0,0,2026-05-05,2026-04-10,248.52,1.64,fittings,A,X
+CP-4-C-CU-232,"4"" Coupling CU",Dallas,0,0.00,0,0,0,0,2026-05-04,2026-04-23,418.56,1.64,fittings,A,X
+CP-4-C-CU-232,"4"" Coupling CU",Nashville,0,0.00,0,0,0,0,2026-04-30,2026-04-19,307.38,1.64,fittings,A,X
+CP-4-T-CPVC-249,"4"" Tee CPVC",Atlanta,0,0.00,0,0,0,0,2026-05-06,2026-04-29,2092.53,8.11,fittings,A,X
+CP-4-T-CPVC-249,"4"" Tee CPVC",Charlotte,0,0.00,0,0,0,0,2026-05-02,2026-04-15,1790.40,8.11,fittings,A,X
+CP-4-T-CPVC-249,"4"" Tee CPVC",Phoenix,0,0.00,0,3,0,0,2026-05-01,2026-04-16,1029.48,8.11,fittings,A,X
+CP-4-T-CPVC-249,"4"" Tee CPVC",Dallas,0,0.00,0,0,0,0,2026-04-30,2026-04-13,1689.69,8.11,fittings,A,X
+CP-4-T-CPVC-249,"4"" Tee CPVC",Nashville,4,32.44,0,5,0,0,2026-04-30,2026-04-16,1264.47,8.11,fittings,A,X
+CP-4-UN-PEX-49,"4"" Union PEX",Atlanta,0,0.00,0,0,0,0,2026-04-17,2026-03-31,431.00,16.47,fittings,C,Y
+CP-4-UN-PEX-49,"4"" Union PEX",Charlotte,3,49.41,0,0,0,0,2026-05-04,2026-02-15,237.05,16.47,fittings,C,Y
+CP-4-UN-PEX-49,"4"" Union PEX",Phoenix,0,0.00,0,0,0,0,2026-04-17,2026-03-08,193.95,16.47,fittings,C,Y
+CP-4-UN-PEX-49,"4"" Union PEX",Dallas,0,0.00,0,0,0,0,2026-04-17,2026-04-16,301.70,16.47,fittings,C,Y
+CP-4-UN-PEX-49,"4"" Union PEX",Nashville,0,0.00,0,0,0,0,2026-05-03,2026-02-25,258.60,16.47,fittings,C,Y
+CP-6-T-CPVC-400,"6"" Tee CPVC",Atlanta,10,85.50,0,0,0,0,2026-04-30,2026-04-09,2082.54,8.55,fittings,A,X
+CP-6-T-CPVC-400,"6"" Tee CPVC",Charlotte,0,0.00,0,0,0,0,2026-05-04,2026-04-27,1445.26,8.55,fittings,A,X
+CP-6-T-CPVC-400,"6"" Tee CPVC",Phoenix,0,0.00,0,0,0,0,2026-05-01,2026-04-08,955.92,8.55,fittings,A,X
+CP-6-T-CPVC-400,"6"" Tee CPVC",Dallas,0,0.00,0,0,0,0,2026-05-05,2026-04-16,1729.76,8.55,fittings,A,X
+CP-6-T-CPVC-400,"6"" Tee CPVC",Nashville,0,0.00,0,0,0,0,2026-05-01,2026-04-29,1058.34,8.55,fittings,A,X
+RFG-404A-10-34,R-404A Refrigerant 10lb Cylinder,Atlanta,10,2012.10,0,0,0,0,2025-09-26,2025-01-22,0.00,201.21,refrigerants,B,Y
+RFG-404A-10-34,R-404A Refrigerant 10lb Cylinder,Charlotte,8,1609.68,0,0,0,0,2025-08-29,2024-11-23,0.00,201.21,refrigerants,B,Y
+RFG-404A-10-34,R-404A Refrigerant 10lb Cylinder,Phoenix,5,1006.05,0,0,0,0,2025-06-27,2024-12-15,0.00,201.21,refrigerants,B,Y
+RFG-404A-10-34,R-404A Refrigerant 10lb Cylinder,Dallas,7,1408.47,0,0,0,0,2025-06-27,2024-11-06,0.00,201.21,refrigerants,B,Y
+RFG-404A-10-34,R-404A Refrigerant 10lb Cylinder,Nashville,8,1609.68,0,0,0,0,2025-09-18,2024-12-17,0.00,201.21,refrigerants,B,Y
+RFG-404A-25-43,R-404A Refrigerant 25lb Cylinder,Atlanta,9,5680.17,0,0,0,0,2025-09-02,2024-11-29,0.00,631.13,refrigerants,A,X
+RFG-404A-25-43,R-404A Refrigerant 25lb Cylinder,Charlotte,9,5680.17,0,0,0,0,2025-08-17,2024-12-25,0.00,631.13,refrigerants,A,X
+RFG-404A-25-43,R-404A Refrigerant 25lb Cylinder,Phoenix,4,2524.52,0,0,0,0,2025-08-12,2024-12-25,0.00,631.13,refrigerants,A,X
+RFG-404A-25-43,R-404A Refrigerant 25lb Cylinder,Dallas,7,4417.91,0,0,0,0,2025-06-13,2024-12-10,0.00,631.13,refrigerants,A,X
+RFG-404A-25-43,R-404A Refrigerant 25lb Cylinder,Nashville,6,3786.78,0,0,0,0,2025-08-27,2024-11-05,0.00,631.13,refrigerants,A,X
+RFG-404A-25-45,R-404A Refrigerant 25lb Cylinder,Atlanta,11,6100.60,0,0,0,0,2025-08-14,2024-12-05,0.00,554.60,refrigerants,B,Y
+RFG-404A-25-45,R-404A Refrigerant 25lb Cylinder,Charlotte,8,4436.80,0,0,0,0,2025-07-01,2025-01-08,0.00,554.60,refrigerants,B,Y
+RFG-404A-25-45,R-404A Refrigerant 25lb Cylinder,Phoenix,4,2218.40,0,0,0,0,2025-07-07,2025-01-29,0.00,554.60,refrigerants,B,Y
+RFG-404A-25-45,R-404A Refrigerant 25lb Cylinder,Dallas,8,4436.80,0,0,0,0,2025-08-23,2024-12-26,0.00,554.60,refrigerants,B,Y
+RFG-404A-25-45,R-404A Refrigerant 25lb Cylinder,Nashville,8,4436.80,0,0,0,0,2025-06-12,2024-11-13,0.00,554.60,refrigerants,B,Y
+RFG-404A-50-44,R-404A Refrigerant 50lb Cylinder,Atlanta,11,6050.66,0,0,0,0,2025-06-28,2024-11-01,0.00,550.06,refrigerants,C,Z
+RFG-404A-50-44,R-404A Refrigerant 50lb Cylinder,Charlotte,7,3850.42,0,0,0,0,2025-09-14,2024-11-30,0.00,550.06,refrigerants,C,Z
+RFG-404A-50-44,R-404A Refrigerant 50lb Cylinder,Phoenix,6,3300.36,0,0,0,0,2025-08-12,2025-01-08,0.00,550.06,refrigerants,C,Z
+RFG-404A-50-44,R-404A Refrigerant 50lb Cylinder,Dallas,7,3850.42,0,0,0,0,2025-08-23,2024-12-09,0.00,550.06,refrigerants,C,Z
+RFG-404A-50-44,R-404A Refrigerant 50lb Cylinder,Nashville,7,3850.42,0,0,0,0,2025-07-12,2024-11-03,0.00,550.06,refrigerants,C,Z
+RFG-410A-10-21,R-410A Refrigerant 10lb Cylinder,Atlanta,10,3944.80,0,0,0,0,2025-09-25,2024-11-23,0.00,394.48,refrigerants,A,Z
+RFG-410A-10-21,R-410A Refrigerant 10lb Cylinder,Charlotte,6,2366.88,0,0,0,0,2025-09-02,2025-01-21,0.00,394.48,refrigerants,A,Z
+RFG-410A-10-21,R-410A Refrigerant 10lb Cylinder,Phoenix,5,1972.40,0,0,0,0,2025-07-14,2024-11-27,0.00,394.48,refrigerants,A,Z
+RFG-410A-10-21,R-410A Refrigerant 10lb Cylinder,Dallas,7,2761.36,0,0,0,0,2025-09-04,2025-01-25,0.00,394.48,refrigerants,A,Z
+RFG-410A-10-21,R-410A Refrigerant 10lb Cylinder,Nashville,7,2761.36,0,0,0,0,2025-07-02,2025-01-26,0.00,394.48,refrigerants,A,Z
+RFG-410A-25-25,R-410A Refrigerant 25lb Cylinder,Atlanta,10,1742.20,0,0,0,0,2025-09-01,2024-12-12,0.00,174.22,refrigerants,C,Y
+RFG-410A-25-25,R-410A Refrigerant 25lb Cylinder,Charlotte,7,1219.54,0,0,0,0,2025-08-25,2025-01-24,0.00,174.22,refrigerants,C,Y
+RFG-410A-25-25,R-410A Refrigerant 25lb Cylinder,Phoenix,6,1045.32,0,0,0,0,2025-09-29,2025-01-30,0.00,174.22,refrigerants,C,Y
+RFG-410A-25-25,R-410A Refrigerant 25lb Cylinder,Dallas,9,1567.98,0,0,0,0,2025-09-09,2025-01-21,0.00,174.22,refrigerants,C,Y
+RFG-410A-25-25,R-410A Refrigerant 25lb Cylinder,Nashville,7,1219.54,0,0,0,0,2025-08-17,2024-12-14,0.00,174.22,refrigerants,C,Y
+WH-ELEC-119-LCH-1,119gal ELEC Water Heater LCH,Atlanta,5,17951.90,0,0,2,3,2026-04-16,2026-03-29,14942.52,3590.38,water_heaters,C,X
+WH-ELEC-119-LCH-1,119gal ELEC Water Heater LCH,Charlotte,2,7180.76,0,0,2,3,2026-04-07,2026-04-05,9961.68,3590.38,water_heaters,C,X
+WH-ELEC-119-LCH-1,119gal ELEC Water Heater LCH,Phoenix,2,7180.76,0,1,2,3,2026-04-10,2026-02-01,14942.52,3590.38,water_heaters,C,X
+WH-ELEC-119-LCH-1,119gal ELEC Water Heater LCH,Dallas,2,7180.76,0,1,2,3,2026-04-22,2026-04-15,19923.36,3590.38,water_heaters,C,X
+WH-ELEC-119-LCH-1,119gal ELEC Water Heater LCH,Nashville,0,0.00,0,0,2,3,2026-04-07,2026-04-17,9961.68,3590.38,water_heaters,C,X
+WH-ELEC-30-STA-7,30gal ELEC Water Heater STA,Atlanta,0,0.00,0,0,2,3,2026-05-03,2026-02-07,41295.60,2926.53,water_heaters,C,Y
+WH-ELEC-30-STA-7,30gal ELEC Water Heater STA,Charlotte,2,5853.06,0,0,2,3,2026-04-21,2026-03-10,24777.36,2926.53,water_heaters,C,Y
+WH-ELEC-30-STA-7,30gal ELEC Water Heater STA,Phoenix,2,5853.06,0,1,2,3,2026-05-02,2026-02-22,24777.36,2926.53,water_heaters,C,Y
+WH-ELEC-30-STA-7,30gal ELEC Water Heater STA,Dallas,3,8779.59,0,0,2,3,2026-04-14,2026-03-01,28906.92,2926.53,water_heaters,C,Y
+WH-ELEC-30-STA-7,30gal ELEC Water Heater STA,Nashville,0,0.00,0,1,2,3,2026-04-13,2026-04-14,20647.80,2926.53,water_heaters,C,Y
+WH-ELEC-40-STA-2,40gal ELEC Water Heater STA,Atlanta,0,0.00,0,0,2,3,2026-04-22,2026-03-16,22489.92,3156.74,water_heaters,A,Y
+WH-ELEC-40-STA-2,40gal ELEC Water Heater STA,Charlotte,0,0.00,0,0,2,3,2026-04-29,2026-02-02,11244.96,3156.74,water_heaters,A,Y
+WH-ELEC-40-STA-2,40gal ELEC Water Heater STA,Phoenix,2,6313.48,0,0,2,3,2026-04-19,2026-03-17,11244.96,3156.74,water_heaters,A,Y
+WH-ELEC-40-STA-2,40gal ELEC Water Heater STA,Dallas,2,6313.48,0,0,2,3,2026-04-22,2026-02-22,11244.96,3156.74,water_heaters,A,Y
+WH-ELEC-40-STA-2,40gal ELEC Water Heater STA,Nashville,2,6313.48,0,0,2,3,2026-04-18,2026-02-08,14993.28,3156.74,water_heaters,A,Y
+WH-GAS-100-STA-3,100gal GAS Water Heater STA,Atlanta,3,6020.67,0,1,2,3,2026-04-22,2026-04-03,19463.92,2006.89,water_heaters,B,Z
+WH-GAS-100-STA-3,100gal GAS Water Heater STA,Charlotte,0,0.00,0,0,2,3,2026-04-16,2026-02-07,9731.96,2006.89,water_heaters,B,Z
+WH-GAS-100-STA-3,100gal GAS Water Heater STA,Phoenix,2,4013.78,0,0,2,3,2026-05-03,2026-02-10,7298.97,2006.89,water_heaters,B,Z
+WH-GAS-100-STA-3,100gal GAS Water Heater STA,Dallas,0,0.00,0,0,2,3,2026-04-25,2026-03-12,19463.92,2006.89,water_heaters,B,Z
+WH-GAS-100-STA-3,100gal GAS Water Heater STA,Nashville,2,4013.78,0,0,2,3,2026-05-02,2026-03-22,12164.95,2006.89,water_heaters,B,Z
+WH-GAS-75-BW-6,75gal GAS Water Heater BW,Atlanta,5,18268.90,0,0,2,3,2026-04-11,2026-02-16,48132.70,3653.78,water_heaters,C,Y
+WH-GAS-75-BW-6,75gal GAS Water Heater BW,Charlotte,0,0.00,0,0,2,3,2026-04-15,2026-02-21,33692.89,3653.78,water_heaters,C,Y
+WH-GAS-75-BW-6,75gal GAS Water Heater BW,Phoenix,1,3653.78,0,0,2,3,2026-04-17,2026-03-29,28879.62,3653.78,water_heaters,C,Y
+WH-GAS-75-BW-6,75gal GAS Water Heater BW,Dallas,0,0.00,4,1,2,3,2026-04-25,2026-03-06,57759.24,3653.78,water_heaters,C,Y
+WH-GAS-75-BW-6,75gal GAS Water Heater BW,Nashville,0,0.00,0,1,2,3,2026-04-10,2026-02-08,43319.43,3653.78,water_heaters,C,Y
+WH-HP-40-RHM-0,40gal Heat Pump Water Heater RHM,Atlanta,4,12245.40,0,0,2,3,2026-04-10,2026-03-02,11211.84,3061.35,water_heaters,C,Y
+WH-HP-40-RHM-0,40gal Heat Pump Water Heater RHM,Charlotte,3,9184.05,0,0,2,3,2026-04-20,2026-04-09,7474.56,3061.35,water_heaters,C,Y
+WH-HP-40-RHM-0,40gal Heat Pump Water Heater RHM,Phoenix,0,0.00,0,0,2,3,2026-04-12,2026-02-04,7474.56,3061.35,water_heaters,C,Y
+WH-HP-40-RHM-0,40gal Heat Pump Water Heater RHM,Dallas,0,0.00,0,0,2,3,2026-04-20,2026-03-18,14949.12,3061.35,water_heaters,C,Y
+WH-HP-40-RHM-0,40gal Heat Pump Water Heater RHM,Nashville,1,3061.35,0,0,2,3,2026-04-15,2026-02-10,11211.84,3061.35,water_heaters,C,Y
+WH-HP-50-AOS-4,50gal Heat Pump Water Heater AOS,Atlanta,4,9416.96,0,35,2,3,2026-04-07,2026-02-07,37156.44,2354.24,water_heaters,A,Z
+WH-HP-50-AOS-4,50gal Heat Pump Water Heater AOS,Charlotte,3,7062.72,0,0,2,3,2026-04-14,2026-02-07,30963.70,2354.24,water_heaters,A,Z
+WH-HP-50-AOS-4,50gal Heat Pump Water Heater AOS,Phoenix,2,4708.48,0,0,2,3,2026-04-13,2026-02-03,30963.70,2354.24,water_heaters,A,Z
+WH-HP-50-AOS-4,50gal Heat Pump Water Heater AOS,Dallas,3,7062.72,0,0,2,3,2026-04-07,2026-04-12,21674.59,2354.24,water_heaters,A,Z
+WH-HP-50-AOS-4,50gal Heat Pump Water Heater AOS,Nashville,2,4708.48,0,0,2,3,2026-04-09,2026-04-13,27867.33,2354.24,water_heaters,A,Z
+WH-HP-50-LCH-5,50gal Heat Pump Water Heater LCH,Atlanta,4,14334.96,0,0,2,3,2026-04-24,2026-03-16,74603.68,3583.74,water_heaters,C,X
+WH-HP-50-LCH-5,50gal Heat Pump Water Heater LCH,Charlotte,0,0.00,4,1,2,3,2026-04-13,2026-04-05,41964.57,3583.74,water_heaters,C,X
+WH-HP-50-LCH-5,50gal Heat Pump Water Heater LCH,Phoenix,1,3583.74,0,0,2,3,2026-04-29,2026-02-15,46627.30,3583.74,water_heaters,C,X
+WH-HP-50-LCH-5,50gal Heat Pump Water Heater LCH,Dallas,2,7167.48,0,0,2,3,2026-05-02,2026-04-11,41964.57,3583.74,water_heaters,C,X
+WH-HP-50-LCH-5,50gal Heat Pump Water Heater LCH,Nashville,2,7167.48,0,0,2,3,2026-05-03,2026-03-15,55952.76,3583.74,water_heaters,C,X
