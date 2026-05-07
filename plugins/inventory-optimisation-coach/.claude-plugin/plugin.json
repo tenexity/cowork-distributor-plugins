@@ -1,0 +1,8 @@
+{
+  "name": "inventory-optimisation-coach",
+  "version": "0.1.0",
+  "description": "Coaches HVAC and plumbing wholesale distributors through inventory optimisation work — dead-stock analysis, reorder-point reviews, branch-level transfers, vendor returns, working-capital snapshots. Paste an ERP export, get a one-shot analysis the user can act on manually.",
+  "author": {
+    "name": "Tenexity"
+  }
+}
